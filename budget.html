@@ -12,30 +12,71 @@
 
 </head>
 <body>
-    <div class="input-group  mt-5 w-50 mx-auto">
-        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
-         aria-describedby="button-addon2" id="input">
-        <button class="btn btn-outline-secondary btn-primary text-white" type="button" id="button">Button</button>
-      </div>
-      <table class="table w-50 mx-auto mt-5">
-        <thead>
+  <div class="container">
+    <p class="h1">BUDGETING WEB APPLICATION</p>
+    <div class=" amount">
+      <div>
+      <h3>BUDGET</h3>
+      <p class=" data" id="set">$0.00</p>
+    </div>
+    <div class="div1">
+      <h3>EXPENSES</h3>
+      <p class="data" id="kharcha">$0.00</p>
+     </div>
+     <div class="div1">
+      <h3>BALANCE</h3>
+      <p class="data" id="balance">$0.00</p>
+     </div>
+    </div>
+    <div id="butdiv">
+    <input type="number" placeholder="set budget" id="get-amount" class="budget-field">
+    <button type="button" class="btn btn-primary" id="button2">Enter</button>
+  </div>
+</tbody> 
+</table>
+<div class="input-group  mt-3 w-50 mx-auto">
+  <input type="text" class="form-control" required placeholder="monthly expenses" aria-label="monthly expenses"
+   aria-describedby="button-addon2" id="input">
+  
+</div>
+<div class="input-group  mt-3 w-50 mx-auto">
+  <input type="number" class="form-control" placeholder="amount" aria-label="amount"
+   aria-describedby="button-addon2" id="amount-input">
+
+
+</div>
+
+ <div class="input-group input-group-sm mb-3 mt-3 w-50 mx-auto">
+  <input type="date" id="dateobj" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+</div> 
+<div>
+<button class="btn btn-outline-secondary btn-primary text-white mt-3" type="button" id="button" >submit</button>
+</div>
+
+    
+      <table class="table w-50 mx-auto mt-2">
+       <thead> 
           <tr>
             <th scope="col">#</th>
             <th scope="col">expenses</th>
-            <th scope="col">aount</th>
+            <th scope="col">amount</th>
+            <th scope="col">paymentdate</th>
             <th scope="col">edit/delete </th>
-          </tr>
+          </tr> 
         </thead>
-        <tbody>
+         <tbody id="table">
+          <!--
           <tr>
             <th scope="row">1</th>
-            <td>Mark</td>
+            <td>mark</td>
             <td>@mdo</td>
+
             <td><i class="bi bi-pencil-square"></i>       /<i class="bi bi-trash3-fill"></i></i></td>
-          </tr>
+          </tr>-->
           
-        </tbody>
-      </table>
+          
+       
+    </div>
 
 
 
